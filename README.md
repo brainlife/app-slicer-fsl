@@ -3,7 +3,7 @@
 
 # Generate images of DWI overlaid on T1 
 
-This app will generate QA images of the DWI image overlaid on the T1 to identify quality of registration using FSL slicer functionality. Requires the DWI and T1 to be registered to each other before running. 
+This app will generate QA images of the DWI image overlaid on the T1 to identify quality of registration using FSL slicer functionality. Requires the DWI and T1 to be registered to each other before running. The intent of this app is to provide quick QA of the DWI-T1 registration or to create images for paper figures.
 
 ### Authors 
 
@@ -42,9 +42,9 @@ You can submit this App online at [https://doi.org/10.25663/brainlife.app.309](h
 ```json 
 {
    "dwi":    "testdata/dwi/dwi.nii.gz",
-    "bvals":    "testdata/dwi/dwi.bvals",
-    "bvecs":    "tesdata/dwi/dwi.bvecs",
-    "anat":    "testdata/anat/t1.nii.gz"
+   "bvals":    "testdata/dwi/dwi.bvals",
+   "bvecs":    "tesdata/dwi/dwi.bvecs",
+   "anat":    "testdata/anat/t1.nii.gz"
 } 
 ``` 
 
@@ -81,4 +81,4 @@ This App requires the following libraries when run locally.
 - Xvfb: 
 - Xvfbwrapper: 
 - jsonlab: 
--singularity: 
+- singularity: 
