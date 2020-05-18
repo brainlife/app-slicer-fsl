@@ -3,7 +3,7 @@
 
 # Generate images of tensor 
 
-This app will generate QA images of the tensor datatype using FSL slicer functionality. 
+This app will generate QA images of the tensor datatype using FSL slicer functionality. The goal of this app is to provide quick QA of the DTI fit and to generate images for paper figures.
 
 ### Authors 
 
@@ -42,9 +42,9 @@ You can submit this App online at [https://doi.org/10.25663/brainlife.app.302](h
 ```json 
 {
    "fa":    "testdata/tensor/ifa.nii.gz",
-    "md":    "testdata/tensor/md.nii.gz",
-    "rd":    "tesdata/tensor/rd.nii.gz",
-    "ad":    "tesdata/tensor/ad.nii.gz"
+   "md":    "testdata/tensor/md.nii.gz",
+   "rd":    "tesdata/tensor/rd.nii.gz",
+   "ad":    "tesdata/tensor/ad.nii.gz"
 } 
 ``` 
 
