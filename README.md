@@ -1,9 +1,9 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-brainlife.app.298-blue.svg)](https://doi.org/10.25663/brainlife.app.298)
 
-# Generate images of DWI, fMRI, T1, T2, masks, 5tt masks, tensor, NODDI 
+# Generate images of DWI, fMRI, T1, T2, masks
 
-This app will generate QA images of a large variety of datatypes, including DWI, fMRI, T1, T2, masks, 5tt masks, tensor, and NODDI. The QA images contain axial, sagittal, and coronal views 
+This app will generate QA images of a large variety of datatypes, including DWI, fMRI, T1, T2, and masks. The QA images contain axial, sagittal, and coronal views. The user can specify which volume to generate an image from if there are multiple volumes in the image. The intent of these apps is to provide quick QA and to potentially generate figures for a paper figure.
 
 ### Authors 
 
