@@ -3,7 +3,7 @@
 
 # Generate images of tissue type masks 
 
-This app will generate QA images of the five tissue type masks (GM, WM, CSF) generated from MrTrix3 using FSL slicer functionality. 
+This app will generate QA images of the five tissue type masks (GM, WM, CSF) generated from MrTrix3 using FSL slicer functionality. If you haven't generated the 5tt masks yet, you can just input the T1 and it will automatically generate the masks for you. The goal of this app is to provide quick QA of the 5tt segmentation and generate images for paper figures.
 
 ### Authors 
 
@@ -42,7 +42,7 @@ You can submit this App online at [https://doi.org/10.25663/brainlife.app.312](h
 ```json 
 {
    "input":    "testdata/mask/mask.nii.gz",
-    "anat":    "testdata/anat/t1.nii.gz"
+   "anat":    "testdata/anat/t1.nii.gz"
 } 
 ``` 
 
