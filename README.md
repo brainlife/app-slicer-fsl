@@ -3,7 +3,7 @@
 
 # Generate images of NODDI 
 
-This app will generate QA images of the images inside the NODDI datatype using FSL slicer functionality. 
+This app will generate QA images of the images inside the NODDI datatype using FSL slicer functionality. The goal of this app is to provide quick QA of the NODDI fit and to generate images for paper figures.
 
 ### Authors 
 
@@ -42,8 +42,8 @@ You can submit this App online at [https://doi.org/10.25663/brainlife.app.303](h
 ```json 
 {
    "icvf":    "testdata/noddi/icvf.nii.gz",
-    "isovf":    "testdata/noddi/isovf.nii.gz",
-    "od":    "tesdata/noddi/od.nii.gz"
+   "isovf":    "testdata/noddi/isovf.nii.gz",
+   "od":    "tesdata/noddi/od.nii.gz"
 } 
 ``` 
 
