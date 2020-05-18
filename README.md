@@ -79,4 +79,4 @@ This App requires the following libraries when run locally.
 - Xvfb: 
 - Xvfbwrapper: 
 - jsonlab: 
--singularity: 
+- singularity: 
