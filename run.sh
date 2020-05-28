@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # noddi
-icvf=`jq -r '.icvf' config.json`
-od=`jq -r '.od' config.json`
+ndi=`jq -r '.ndi' config.json`
+odi=`jq -r '.odi' config.json`
 isovf=`jq -r '.isovf' config.json`
 met="icvf od isovf"
 
