@@ -76,8 +76,8 @@ The secondary output of this app is `product.json`. This file allows web interfa
 
 This App requires the following libraries when run locally. 
 
-- FSL: 
-- Xvfb: 
-- Xvfbwrapper: 
-- jsonlab: 
-- singularity: 
+- FSL: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation
+- Xvfb: https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml
+- Xvfbwrapper: https://pypi.org/project/xvfbwrapper/
+- jsonlab: https://github.com/fangq/jsonlab
+- singularity: https://singularity.lbl.gov/quickstart
