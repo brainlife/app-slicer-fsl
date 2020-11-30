@@ -41,9 +41,9 @@ You can submit this App online at [https://doi.org/10.25663/brainlife.app.303](h
 
 ```json 
 {
-   "icvf":    "testdata/noddi/icvf.nii.gz",
+   "ndi":    "testdata/noddi/ndi.nii.gz",
    "isovf":    "testdata/noddi/isovf.nii.gz",
-   "od":    "tesdata/noddi/od.nii.gz"
+   "odi":    "tesdata/noddi/odi.nii.gz"
 } 
 ``` 
 
