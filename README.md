@@ -41,7 +41,7 @@ You can submit this App online at [https://doi.org/10.25663/brainlife.app.302](h
 
 ```json 
 {
-   "fa":    "testdata/tensor/ifa.nii.gz",
+   "fa":    "testdata/tensor/fa.nii.gz",
    "md":    "testdata/tensor/md.nii.gz",
    "rd":    "tesdata/tensor/rd.nii.gz",
    "ad":    "tesdata/tensor/ad.nii.gz"
