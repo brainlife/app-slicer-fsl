@@ -6,7 +6,7 @@ anat=`jq -r '.anat' config.json`
 
 [ ! -f t1.nii.gz ] && cp ${anat} ./
 
-[ ! -f dwi.nii.gz ] && time singularity exec -e docker://brainlife/fsl:5.0.9 ./mask.sh
+[ ! -f bold.nii.gz ] && time singularity exec -e docker://brainlife/fsl:5.0.9 ./mask.sh
 
 time singularity exec -e docker://brainlife/fsleyes:1.0 xvfb-run -s "-screen 0 640x480x24" ./run.sh
 
