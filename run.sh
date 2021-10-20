@@ -3,21 +3,23 @@
 # t1/t2, flair, dwi, or fmri
 input=`jq -r '.input' config.json`
 outdir="raw"
-vol=`jq -r '.volume' config.json`
+volumes=`fslinfo $input | grep 'dim4' | grep -v 'pixdim4' | cut -f3`
 
-mkdir -p $outdir
+mkdir -p $outdir $outdir/tmp
 
-if [[ ! ${vol} == "" ]]; then
-	fslselectvols -i ${input} -o volume.nii.gz --vols=${vol}
-	input="volume.nii.gz"
-fi
+[ ! -f ./$outdir/tmp/vol0000.nii.gz ] && fslsplit ${input} ./$outdir/tmp/vol
 
-slicer ${input} -a ${outdir}/out.png
+volumes=(`ls -A $outdir/tmp/`)
+for i in ${volumes[*]}
+do
+	slicer $outdir/tmp/${i} -a ${outdir}/${i%%.nii.gz}.png
+done
 
-if [ ! -f ${outdir}/out.png ]; then
+if [ ! -f ${outdir}/${volumes[${#volumes[*]}-1]%%.nii.gz}.png ]; then
 	echo "failed"
-	exit 1
+	# exit 1
 else
 	echo "complete"
-	exit 0
+	rm -rf ./$outdir/tmp
+	# exit 0
 fi
