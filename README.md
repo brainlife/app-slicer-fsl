@@ -14,25 +14,38 @@
 
 <!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
 
-**Generates a PNG of mid-axial, sagittal and coronal slices of a FLAIR image with FSL slicer, for quick visual quality control.**
+> **Generates a PNG of mid-axial, sagittal and coronal slices of a FLAIR image with FSL slicer, for quick visual quality control.**
 
 Runs FSL slicer -a on the input FLAIR image and writes raw/out.png. When the volume parameter is set, fslselectvols first extracts that volume from a 4D image; otherwise slicer renders the image as given. Use it for quick visual QA or for figures; it does not modify the data.
 
-Run it on brainlife.io: [https://doi.org/10.25663/brainlife.app.689](https://doi.org/10.25663/brainlife.app.689)
+| | |
+|---|---|
+| 📥 **Inputs** | `neuro/anat/flair` |
+| 📤 **Outputs** | `raw` |
+| 🐳 **Container** | `brainlife/fsl:5.0.9` |
+| ⚙️ **Resources** | 1 CPUs · 0.25 h walltime |
+| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.689](https://doi.org/10.25663/brainlife.app.689) |
+
+#### 📥 Inputs
 
 | Input | Datatype | Required | Description |
 |---|---|---|---|
 | `input` | `neuro/anat/flair` | yes | FLAIR image (anat/flair datatype). |
 
+#### 📤 Outputs
+
 | Output | Datatype | Description |
 |---|---|---|
 | `raw` | `raw` | Directory with out.png, a mid-axial, sagittal and coronal slice montage of the FLAIR image. |
+
+<details>
+<summary><b>⚙️ Parameters</b> (1)</summary>
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `volume` | string |  | Index of the volume to render from a 4D image (passed to fslselectvols --vols). Leave empty to render the image as given. |
 
-Runtime: container `brainlife/fsl:5.0.9`; 1 CPUs; 0.25 h walltime.
+</details>
 
 <!-- brainlife-app:end -->
 
